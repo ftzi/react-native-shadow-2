@@ -5,7 +5,6 @@
 >
 > **I can only wholeheartedly appreciate everyone's support and kindness over the past almost 4 years and celebrate having reached 39k weekly and 2M total downloads** 🤗
 
-<div s
 ---
 
 <div align="center">
