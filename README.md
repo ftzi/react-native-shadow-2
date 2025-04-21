@@ -5,6 +5,21 @@
 >
 > **I can only wholeheartedly appreciate everyone's support and kindness over the past almost 4 years and celebrate having reached 39k weekly and 2M total downloads** 🤗
 
+<div s
+---
+
+<div align="center">
+  
+## 🚀 Check out my latest project — [NextStack](https://www.nextstack.gg)! 
+
+<a href="https://www.nextstack.gg" target="_blank">
+  <img src="https://www.nextstack.gg/opengraph-image" width="500" alt="NextStack OpenGraph Image">
+</a>
+
+---
+
+</div>
+
 # react-native-shadow-2
 
 <div align="center">
@@ -15,11 +30,11 @@
 
 </div>
 
-[react-native-shadow](https://github.com/879479119/react-native-shadow) is dead for years. This is an improved version with more functionalities, Typescript support and written from scratch. It's not required to define its size: the shadow is smartly applied on the first render and then precisely reapplied on the following ones.
+[react-native-shadow](https://github.com/879479119/react-native-shadow) is dead for years. This is an improved version with more functionalities, TypeScript support, and written from scratch. It's not required to define its size: the shadow is smartly applied on the first render and then precisely reapplied on the following ones.
 
-It solves the old React Native issue of not having the same shadow appearence and usage for Android, iOS and Web.
+It solves the old React Native issue of not having the same shadow appearance and usage for Android, iOS, and Web.
 
-Compatible with Android, iOS and Web. **And Expo!**
+Compatible with Android, iO,S and Web. **And Expo!**
 
 Supports [RTL](https://reactnative.dev/blog/2016/08/19/right-to-left-support-for-react-native-apps).
 
@@ -37,7 +52,7 @@ Supports [RTL](https://reactnative.dev/blog/2016/08/19/right-to-left-support-for
 
 ## 💿 Installation
 
-#### 1. First install [react-native-svg](https://github.com/react-native-svg/react-native-svg#installation).
+#### 1. First, install [react-native-svg](https://github.com/react-native-svg/react-native-svg#installation).
 
 > The latest `react-native-svg` version is recommended, including if using Expo.
 
