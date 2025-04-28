@@ -39,13 +39,13 @@ Supports [RTL](https://reactnative.dev/blog/2016/08/19/right-to-left-support-for
 
 <!--<div align="center">
   <h3>📣 I AM AVAILABLE FOR HIRE! 📣</h3>
-  <a href="https://www.linkedin.com/in/henrique-bfa">Contact me</a> if you need a remote mid-level React Native developer!
+  <a href="https://www.linkedin.com/in/fantauzzi">Contact me</a> if you need a remote mid-level React Native developer!
 </div>-->
 
 ## [🍟 Demo - Expo Snack Sandbox](https://snack.expo.io/@srbrahma/react-native-shadow-2-sandbox)
 > Give this library a quick try!
 
-## [📰 v7 Changelog - 2022-08-08](./CHANGELOG.md)
+## [📰 Changelog](./CHANGELOG.md)
 
 ### [❗ Read the FAQ below!](#️-faq)
 
