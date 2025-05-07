@@ -3,7 +3,7 @@
 >
 > This new feature should be preferred over this library.
 >
-> **I can only wholeheartedly appreciate everyone's support and kindness over the past almost 4 years and celebrate having reached 39k weekly and 2M total downloads** 🤗
+> **I can only wholeheartedly appreciate everyone's support and kindness over the past almost 4 years and celebrate having reached 40k weekly and 2M+ total downloads** 🤗
 
 ---
 
