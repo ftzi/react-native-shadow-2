@@ -105,7 +105,7 @@ export function radialGradient({
   paintInside,
 }: RadialGradientProps): JSX.Element {
   /*
-    On Android !paintInside && <Stop/> would throw [#56](https://github.com/SrBrahma/react-native-shadow-2/issues/56).
+    On Android !paintInside && <Stop/> would throw [#56](https://github.com/ftzi/react-native-shadow-2/issues/56).
     I tried {paintInside ? <Stop/> : <></>}, but it caused the another reported bug in the same issue.
     This if/else solution solves those react-native-svg strange limitations.
     I could try to have a wrapper function / dynamic children but those bugs were very unexpected, so I chose the Will-Work solution.
@@ -162,7 +162,7 @@ export function radialGradient({
 /**
  * Generates a sufficiently unique suffix to add to gradient ids and prevent collisions.
  *
- * https://github.com/SrBrahma/react-native-shadow-2/pull/54
+ * https://github.com/ftzi/react-native-shadow-2/pull/54
  */
 export const generateGradientIdSuffix = (() => {
   let shadowGradientIdCounter = 0;
@@ -172,7 +172,7 @@ export const generateGradientIdSuffix = (() => {
 export const rtlScaleX = { transform: [{ scaleX: -1 }] };
 
 /**
- * https://github.com/SrBrahma/react-native-shadow-2/issues/67
+ * https://github.com/ftzi/react-native-shadow-2/issues/67
  */
 export const rtlAbsoluteFillObject = {
   position: 'absolute',

@@ -38,7 +38,7 @@ export interface ShadowProps {
   startColor?: string;
   /** The color of the shadow at the maximum distance from the content. Accepts alpha channel.
    *
-   * It defaults to a transparent color of `startColor`. E.g.: `startColor` is `#f00`, so it defaults to `#f000`. [Reason here](https://github.com/SrBrahma/react-native-shadow-2/issues/31#issuecomment-985578972).
+   * It defaults to a transparent color of `startColor`. E.g.: `startColor` is `#f00`, so it defaults to `#f000`. [Reason here](https://github.com/ftzi/react-native-shadow-2/issues/31#issuecomment-985578972).
    *
    * @default Transparent startColor */
   endColor?: string;
@@ -92,7 +92,7 @@ export interface ShadowProps {
    *
    * Shortcut to `style={{alignSelf: 'stretch'}}.
    *
-   * [Explanation](https://github.com/SrBrahma/react-native-shadow-2/issues/7#issuecomment-899784537)
+   * [Explanation](https://github.com/ftzi/react-native-shadow-2/issues/7#issuecomment-899784537)
    *
    * @default false */
   stretch?: boolean;
@@ -550,7 +550,7 @@ function getShadow({
 
   /* The anchor for the svgs path is the top left point in the corner square.
               The starting point is the clockwise external arc init point. */
-  /* Checking topLeftShadowEtc > 0 due to https://github.com/SrBrahma/react-native-shadow-2/issues/47. */
+  /* Checking topLeftShadowEtc > 0 due to https://github.com/ftzi/react-native-shadow-2/issues/47. */
   const corners = (
     <>
       {activeCorners.topStart && topStartShadow > 0 && (
@@ -668,7 +668,7 @@ function getShadow({
       style={{ position: 'absolute', ...(isRTL && rtlScaleX) }}
     >
       {typeof width === 'number' && typeof height === 'number' ? (
-        // Maybe due to how react-native-svg handles masks in iOS, the paintInside would have gaps: https://github.com/SrBrahma/react-native-shadow-2/issues/36
+        // Maybe due to how react-native-svg handles masks in iOS, the paintInside would have gaps: https://github.com/ftzi/react-native-shadow-2/issues/36
         // We use Path as workaround to it.
         <Path
           fill={startColorWoOpacity}
@@ -751,7 +751,7 @@ function getResult(props: {
   // const isWidthPrecise = styleWidth;
 
   return (
-    // pointerEvents: https://github.com/SrBrahma/react-native-shadow-2/issues/24
+    // pointerEvents: https://github.com/ftzi/react-native-shadow-2/issues/24
     <View style={props.containerStyle} pointerEvents='box-none' {...props.containerViewProps}>
       <View
         pointerEvents='none'
@@ -778,7 +778,7 @@ function getResult(props: {
           },
           props.style,
           // Without alignSelf: 'flex-start', if your Shadow component had a sibling under the same View, the shadow would try to have the same size of the sibling,
-          // being it for example a text below the shadowed component. https://imgur.com/a/V6ZV0lI, https://github.com/SrBrahma/react-native-shadow-2/issues/7#issuecomment-899764882
+          // being it for example a text below the shadowed component. https://imgur.com/a/V6ZV0lI, https://github.com/ftzi/react-native-shadow-2/issues/7#issuecomment-899764882
           { ...(props.stretch && { alignSelf: 'stretch' }) },
         ]}
         onLayout={(e) => {

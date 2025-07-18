@@ -71,7 +71,7 @@ export const App: React.FC = () => {
           <Text style={styles.title}>{`react-native-shadow-2 sandbox`}</Text>
           <Text
             style={styles.subtitle}
-          >{`By SrBrahma @ https://github.com/SrBrahma/react-native-shadow-2`}</Text>
+          >{`By ftzi @ https://github.com/ftzi/react-native-shadow-2`}</Text>
 
           <View style={styles.sandbox}>
             {/** Can't get this scroll to work properly in web */}

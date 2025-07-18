@@ -1,6 +1,6 @@
 {
   "name": "react-native-shadow-2",
-  "version": "7.1.1",
+  "version": "7.1.2",
   "description": "Cross-platform shadow for React Native. Improved version of the abandoned react-native-shadow package",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SrBrahma/react-native-shadow-2.git"
+    "url": "git+https://github.com/ftzi/react-native-shadow-2.git"
   },
   "keywords": [
     "shadow",
@@ -37,12 +37,12 @@
     "native-shadow",
     "svg"
   ],
-  "author": "Henrique Bruno (aka SrBrahma)",
+  "author": "Bruno Fantauzzi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SrBrahma/react-native-shadow-2/issues"
+    "url": "https://github.com/ftzi/react-native-shadow-2/issues"
   },
-  "homepage": "https://github.com/SrBrahma/react-native-shadow-2#readme",
+  "homepage": "https://github.com/ftzi/react-native-shadow-2#readme",
   "dependencies": {
     "colord": "2.9.2"
   },
