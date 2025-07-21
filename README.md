@@ -7,16 +7,6 @@
 
 ---
 
-<div align="center">
-
-## 🚀 Check out my latest project — [NextStack](https://www.nextstack.gg)!
-
-<a href="https://www.nextstack.gg" target="_blank">
-  <img src="https://www.nextstack.gg/opengraph-image" width="500" alt="NextStack OpenGraph Image">
-</a>
-
----
-
 </div>
 
 # react-native-shadow-2
