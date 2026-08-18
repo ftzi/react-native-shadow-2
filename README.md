@@ -9,9 +9,9 @@
 
 </div>
 
-# react-native-shadow-2
-
 <div align="center">
+
+# react-native-shadow-2
 
 [![npm](https://img.shields.io/npm/v/react-native-shadow-2)](https://www.npmjs.com/package/react-native-shadow-2)
 [![npm](https://img.shields.io/npm/dt/react-native-shadow-2)](https://www.npmjs.com/package/react-native-shadow-2)
