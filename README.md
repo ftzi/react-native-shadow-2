@@ -1,12 +1,3 @@
-> [!IMPORTANT]
-> The new React Native **0.76**, released on **Oct 23, 2024**, [finally supports a cross-platform shadow](https://reactnative.dev/blog/2024/10/23/release-0.76-new-architecture#box-shadow-and-filter-style-props)!
->
-> This new feature should be preferred over this library.
->
-> **I can only wholeheartedly appreciate everyone's support and kindness over the past 4 years and celebrate having reached 40k weekly and 2M+ total downloads** 🤗
-
----
-
 </div>
 
 <div align="center">
@@ -31,6 +22,15 @@ Supports [RTL](https://reactnative.dev/blog/2016/08/19/right-to-left-support-for
   <h3>📣 I AM AVAILABLE FOR HIRE! 📣</h3>
   <a href="https://www.linkedin.com/in/fantauzzi">Contact me</a> if you need a remote mid-level React Native developer!
 </div>-->
+
+> [!IMPORTANT]
+> The new React Native **0.76**, released on **Oct 23, 2024**, [finally supports a cross-platform shadow](https://reactnative.dev/blog/2024/10/23/release-0.76-new-architecture#box-shadow-and-filter-style-props)!
+>
+> This new feature should be preferred over this library.
+>
+> **I can only wholeheartedly appreciate everyone's support and kindness over the past 4 years and celebrate having reached 40k weekly and 3M+ total downloads** 🤗
+
+---
 
 ## [🍟 Demo - Expo Snack Sandbox](https://snack.expo.io/@srbrahma/react-native-shadow-2-sandbox)
 > Give this library a quick try!
