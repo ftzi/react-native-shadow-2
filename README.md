@@ -23,7 +23,7 @@
 
 It solves the old React Native issue of not having the same shadow appearance and usage for Android, iOS, and Web.
 
-Compatible with Android, iO,S and Web. **And Expo!**
+Compatible with Android, iOS and Web. **And Expo!**
 
 Supports [RTL](https://reactnative.dev/blog/2016/08/19/right-to-left-support-for-react-native-apps).
 
