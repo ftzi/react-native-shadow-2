@@ -1,4 +1,8 @@
-### 7.1.2 2025-07-18
+### 7.1.3 - 2026-11-16
+
+- Update README and fix typos in the documentation and code comments
+
+### 7.1.2 - 2025-07-18
 
 - Update documentation and package.json links
 

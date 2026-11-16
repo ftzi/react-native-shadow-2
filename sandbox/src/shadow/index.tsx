@@ -47,14 +47,14 @@ export interface ShadowProps {
   distance?: number;
   /** The sides that have the shadows drawn. Doesn't include corners.
    *
-   * Undefined sides fallbacks to true.
+   * Undefined sides fall back to true.
    *
    * @default undefined */
   // We are using the raw type here instead of Side/Corner so TypeDoc/Readme output is better for the users, won't be just `Side`.
   sides?: Record<'start' | 'end' | 'top' | 'bottom', boolean>;
   /** The corners that have the shadows drawn.
    *
-   * Undefined corners fallbacks to true.
+   * Undefined corners fall back to true.
    *
    * @default undefined */
   corners?: Record<'topStart' | 'topEnd' | 'bottomStart' | 'bottomEnd', boolean>;
@@ -68,7 +68,7 @@ export interface ShadowProps {
   offset?: [x: number | string, y: number | string];
   /** If the shadow should be applied inside the external shadows, below the child. `startColor` is used as fill color.
    *
-   * You may want this as true when using offset or if your child have some transparency.
+   * You may want this as true when using offset or if your child has some transparency.
    *
    * **The default changes to true if `offset` property is defined.**
    *
@@ -88,9 +88,9 @@ export interface ShadowProps {
    *
    * @default false */
   safeRender?: boolean;
-  /** Use this when you want your children to ocuppy all available cross-axis/horizontal space.
+  /** Use this when you want your children to occupy all available cross-axis/horizontal space.
    *
-   * Shortcut to `style={{alignSelf: 'stretch'}}.
+   * Shortcut to `style={{alignSelf: 'stretch'}}`.
    *
    * [Explanation](https://github.com/ftzi/react-native-shadow-2/issues/7#issuecomment-899784537)
    *
@@ -109,7 +109,7 @@ export interface ShadowProps {
   containerViewProps?: ViewProps;
   /** Props for the shadow's wrapping View. You probably don't need to use this. You may pass `style` to this. */
   shadowViewProps?: ViewProps;
-  /** Props for the children's wrapping View. You probably't don't need to use this. */
+  /** Props for the children's wrapping View. You probably don't need to use this. */
   childrenViewProps?: ViewProps;
   /** Your child component. */
   children?: React.ReactNode;
@@ -212,7 +212,7 @@ function ShadowInner(props: ShadowProps): JSX.Element {
     }, [styleStr]);
 
   const styleWidth = style.width ?? cStyle.width;
-  const width = styleWidth ?? childLayout?.width ?? '100%'; // '100%' sometimes will lead to gaps. Child's size don't lie.
+  const width = styleWidth ?? childLayout?.width ?? '100%'; // '100%' sometimes will lead to gaps. Child's size doesn't lie.
   const styleHeight = style.height ?? cStyle.height;
   const height = styleHeight ?? childLayout?.height ?? '100%';
 
@@ -419,7 +419,7 @@ function getShadow({
   // Fragment wasn't working for some reason, so, using array.
   const linearGradient = [
     // [*1] In mobile, it's required for the alpha to be set in opacity prop to work.
-    // In web, smaller offsets needs to come before, so offset={0} definition comes first.
+    // In web, smaller offsets need to come before, so offset={0} definition comes first.
     <Stop offset={0} stopColor={startColorWoOpacity} stopOpacity={startColorOpacity} key='1' />,
     <Stop offset={1} stopColor={endColorWoOpacity} stopOpacity={endColorOpacity} key='2' />,
   ];
@@ -662,7 +662,7 @@ function getShadow({
   /**
    * Paint the inner area, so we can offset it.
    * [*2]: I tried redrawing the inner corner arc, but there would always be a small gap between the external shadows
-   * and this internal shadow along the curve. So, instead we dont specify the inner arc on the corners when
+   * and this internal shadow along the curve. So, instead we don't specify the inner arc on the corners when
    * paintBelow, but just use a square inner corner. And here we will just mask those squares in each corner.
    */
   const inner = paintInside && (
@@ -790,7 +790,7 @@ function getResult({
         style={[
           {
             // We are defining here the radii so when using radius props it also affects the backgroundColor and Pressable ripples are properly contained.
-            // Note that topStart/etc has priority over topLeft/etc. We use topLeft so the user may overwrite it with topLeft or topStart styles.
+            // Note that topStart/etc have priority over topLeft/etc. We use topLeft so the user may overwrite it with topLeft or topStart styles.
             borderTopLeftRadius: radii.topStart,
             borderTopRightRadius: radii.topEnd,
             borderBottomLeftRadius: radii.bottomStart,

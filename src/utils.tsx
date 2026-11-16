@@ -43,14 +43,14 @@ export const divDps: (a: number, b: number) => number = isWeb
 /**
  * [Android/ios?] [*4] A small safe margin for the svg sizes.
  *
- * It fixes some gaps that we had, as even that the svg size and the svg rect for example size were the same, this rect
- * would still strangely be cropped/clipped. We give this additional size to the svg so our rect/etc won't be unintendedly clipped.
+ * It fixes some gaps that we had, as even though the svg size and the svg rect for example size were the same, this rect
+ * would still strangely be cropped/clipped. We give this additional size to the svg so our rect/etc won't be unintentionally clipped.
  *
  * It doesn't mean 1 pixel, as RN uses dp sizing, it's just an arbitrary and big enough number.
  * */
 export const additional = isWeb ? 0 : 1;
 
-/** Auxilary function to shorten code */
+/** Auxiliary function to shorten code */
 export function objFromKeys<KeysArray extends Readonly<string[]>, Rtn>(
   keys: KeysArray,
   fun: (key: KeysArray[number]) => Rtn,
