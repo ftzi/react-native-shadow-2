@@ -1,3 +1,5 @@
+name: Publish
+
 on:
   push:
     branches:
@@ -6,13 +8,20 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      # Trusted publishing: npm accepts this workflow's OIDC identity instead of a stored token.
+      # https://docs.npmjs.com/trusted-publishers
+      id-token: write
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
-          node-version: 12
-      - run: npm install
-      - run: npm test
-      - uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
+          # Trusted publishing needs Node >= 22.14.0 and npm >= 11.5.1.
+          node-version: 24
+          package-manager-cache: false
+      # Also builds lib/ through the prepare script; the publish step runs with --ignore-scripts.
+      - run: npm ci
+      # Publishes only when package.json has a version that is not on npm yet.
+      - uses: JS-DevTools/npm-publish@v4
